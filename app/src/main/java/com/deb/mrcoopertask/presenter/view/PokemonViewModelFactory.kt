@@ -4,8 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.deb.mrcoopertask.domain.usecase.PokemonGenderUseCase
 import com.deb.mrcoopertask.domain.usecase.PokemonUseCase
+import javax.inject.Inject
 
-class PokemonViewModelFactory(
+class PokemonViewModelFactory @Inject constructor(
     private val pokemonGenderUseCase : PokemonGenderUseCase,
     private val pokemonUseCase: PokemonUseCase
 ): ViewModelProvider.Factory {

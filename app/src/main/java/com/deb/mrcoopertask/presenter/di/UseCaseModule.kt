@@ -10,22 +10,22 @@ import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 
-@Module
-@InstallIn(SingletonComponent::class)
-class UseCaseModule {
-    @Singleton
-    @Provides
-    fun provideGetGenderUseCase(
-        pokemonRepository: PokemonRepository
-    ) : PokemonGenderUseCase {
-        return PokemonGenderUseCase(pokemonRepository)
-    }
-
-    @Singleton
-    @Provides
-    fun provideGetPokemonUseCase(
-        pokemonRepository: PokemonRepository
-    ) : PokemonUseCase {
-        return PokemonUseCase(pokemonRepository)
-    }
-}
+//@Module
+//@InstallIn(SingletonComponent::class)
+//class UseCaseModule {
+//    @Singleton
+//    @Provides
+//    fun provideGetGenderUseCase(
+//        pokemonRepository: PokemonRepository
+//    ) : PokemonGenderUseCase {
+//        return PokemonGenderUseCase(pokemonRepository)
+//    }
+//
+//    @Singleton
+//    @Provides
+//    fun provideGetPokemonUseCase(
+//        pokemonRepository: PokemonRepository
+//    ) : PokemonUseCase {
+//        return PokemonUseCase(pokemonRepository)
+//    }
+//}

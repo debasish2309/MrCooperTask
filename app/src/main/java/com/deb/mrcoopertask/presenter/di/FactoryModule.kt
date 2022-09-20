@@ -9,19 +9,19 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@Module
-@InstallIn(SingletonComponent::class)
-class FactoryModule {
-
-    @Provides
-    @Singleton
-    fun providePokemonViewModelFactory(
-        pokemonGenderUseCase: PokemonGenderUseCase,
-        pokemonUseCase: PokemonUseCase
-    ): PokemonViewModelFactory {
-        return PokemonViewModelFactory(
-            pokemonGenderUseCase,
-            pokemonUseCase
-        )
-    }
-}
+//@Module
+//@InstallIn(SingletonComponent::class)
+//class FactoryModule {
+//
+//    @Provides
+//    @Singleton
+//    fun providePokemonViewModelFactory(
+//        pokemonGenderUseCase: PokemonGenderUseCase,
+//        pokemonUseCase: PokemonUseCase
+//    ): PokemonViewModelFactory {
+//        return PokemonViewModelFactory(
+//            pokemonGenderUseCase,
+//            pokemonUseCase
+//        )
+//    }
+//}

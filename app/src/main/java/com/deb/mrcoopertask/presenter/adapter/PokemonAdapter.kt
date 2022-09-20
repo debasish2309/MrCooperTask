@@ -6,11 +6,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.deb.mrcoopertask.data.model.ResponseGender.PokemonSpecies
+
 import com.deb.mrcoopertask.data.model.ResponseGender.PokemonSpeciesDetail
 import com.deb.mrcoopertask.databinding.PokemonSingleItemBinding
+import javax.inject.Inject
 
-class PokemonAdapter() : ListAdapter<PokemonSpeciesDetail, PokemonAdapter.PokemonViewHolder>(
+class PokemonAdapter @Inject constructor() : ListAdapter<PokemonSpeciesDetail, PokemonAdapter.PokemonViewHolder>(
     DiffCallback()
 ) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder {
